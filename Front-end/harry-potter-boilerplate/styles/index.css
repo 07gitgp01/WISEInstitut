@@ -1,0 +1,103 @@
+@font-face {
+    font-family: 'harryp';
+    src: url('./assets/fonts/harryp.ttf');
+  }
+  
+  body {
+    font-family: 'harryp', sans-serif;
+    background: url('./assets/images/poudlard-bg.jpeg') no-repeat center center fixed;
+    background-size: cover;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+  }
+  
+  header {
+    background-color: #5e58c6;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  header h1 {
+    color: white;
+  }
+  
+  nav ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  nav ul li {
+    display: inline;
+    margin: 0 15px;
+  }
+  
+  nav ul li a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  nav ul li a:hover {
+    color: #b2aef4;
+  }
+  
+  .welcome-message {
+    text-align: center;
+    margin: 50px 20px;
+  }
+  
+  .themes {
+    display: flex;
+    justify-content: space-between;
+    margin: 50px;
+  }
+  
+  .card {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    width: 30%;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .image {
+    width: 50px;
+  }
+  
+  .card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+  }
+  
+  footer {
+    background-color: #5e58c6;
+    text-align: center;
+    padding: 20px;
+    /* position: fixed; */
+    width: 100%;
+    bottom: 0;
+  }
+  
+  footer a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  footer a:hover {
+    color: #b2aef4;
+  }
+  
+  @media (max-width: 18px) {
+    .themes {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .card {
+      width: 80%;
+      margin-bottom: 20px;
+    }
+  }
+  
