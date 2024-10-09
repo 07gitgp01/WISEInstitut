@@ -75,9 +75,13 @@ Le projet se présentera selon la structure suivante :
 ## 📌 Mon processus
 
 **Planification :** Définir l'objectif, les sections et le contenu du site.
+
 **Conception :** une étape que j'ai malheureusement sauté, qui devait consister à créer une interface visuelle captivante en respectant le thème de l’univers Harry Potter.
+
 **Développement :** Utiliser HTML, CSS, pour coder la structure, le style et l’interactivité du site.
+
 **Optimisation :** Optimisation pour les moteurs de recherche. M'assurer que ma page contient des balises méta appropriées pour le référencement.
+
 **Mise en ligne :** Déployer le projet sur mon github 
 
 ### ⚫ Construit avec
@@ -86,10 +90,8 @@ Le projet se présentera selon la structure suivante :
 - Propriétés personnalisées CSS
 - Flexbox + Media queries
 
-> Ce ne sont que des exemples. Supprimez cette note et remplacez la liste ci-dessus par vos propres choix.
-
 ### ⚫ Ce que j'ai appris
--Importer et utiliser la police "harryp" pour l'ensemble de la page grâce à `@font-face`.
+-Importer et utiliser de polices comme "harryp" pour l'ensemble de la page grâce à `@font-face`.
 ```css
 @font-face {
     font-family: 'harryp';
@@ -163,16 +165,13 @@ Le projet se présentera selon la structure suivante :
 </head>
 ```
 
-
 ### ⚫ Développement continu
-Il faut noter que à l'avenir dans mes projets, j'aimerais bien peaufineer mes connaissances sur les medias queries
-
-> Supprimez cette note et le contenu de cette section et remplacez-le par vos propres plans de développement continu.
+Il faut noter que à l'avenir dans mes projets, j'aimerais bien peaufiner mes connaissances sur les medias queries et flexbox.
 
 ### ⚫ Ressources utiles
 
-- [ChatGPT ](https://www.example.com) - Cela m'a aidé à comprendre des notions. J'ai vraiment aimé ce modèle et je l'utiliserai à l'avenir.
-- [Exemple de ressource 2](https://www.example.com) - Cet article est incroyable et m'a aidé à enfin comprendre XYZ. Je le recommande à tous ceux qui apprennent encore ce concept.
+- [ChatGPT ](https://chatgpt.com) - Cela m'a aidé à comprendre des notions. J'ai vraiment aimé ce modèle et je l'utiliserai à l'avenir.
+- [css-tricks](https://css-tricks.com/snippets/css/a-guide-to-flexbox/) - Ce site est incroyable et m'a aidé à apprehender beaucoup de choses en css, notamment le flexbox. Je le recommande à tous ceux qui apprennent encore ce concept.
 
 ## 📌 Auteur
 
