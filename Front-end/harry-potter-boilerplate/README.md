@@ -1,8 +1,7 @@
 # Wise Institut Classroom - Harry Potter Website 🎓
 
-       Ce document-ci décrit la conception d'un site web immersif consacré à l'univers de Harry Potter . Le site vise à plonger les amoureux de films d'aventures dans l'univers magique qui explore des aventures extraordinaires, des personnages inoubliables et des créatures légendaires.
-
-Important est de noter que le projet combinera certaines compétences en UX|UI design , et animations pour créer une expérience utilisateur agréable tout en valorisant nos compétences techniques sur GitHub.
+Ce document-ci décrit la conception d'un site web immersif consacré à l'univers de Harry Potter . Le site vise à plonger les amoureux de films d'aventures dans l'univers magique qui explore des aventures extraordinaires, des personnages inoubliables et des créatures légendaires.
+	Important est de noter que le projet combinera certaines compétences en UX|UI design , et animations pour créer une expérience utilisateur agréable tout en valorisant nos compétences techniques sur GitHub.
 Le projet se présentera selon la structure suivante :
 
 
