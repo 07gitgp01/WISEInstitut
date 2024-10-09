@@ -6,7 +6,6 @@ Important est de noter que le projet combinera certaines compétences en UX|UI d
 tout en valorisant nos compétences techniques sur GitHub.
 Le projet se présentera selon la structure suivante :
 
-
 ## 📌 Table des matières
 
 - [Vue d'ensemble](#-vue-densemble)
@@ -29,7 +28,7 @@ Le projet se présentera selon la structure suivante :
 **`Contenu du site`**
 - [ ] Inclure une `barre de navigation` conviviale avec un `grand titre` et les sections `représentant les thèmes` principaux du site.
 - [ ] Rédiger un `message de bienvenue` engageant qui présente brièvement l'univers de Harry Potter, l'œuvre de J.K. Rowling, et son impact culturel en 
-      `3 à 4 paragraphes`.
+`3 à 4 paragraphes`.
 - [ ] Ajouter un `titre captivant` qui introduit les différents `thèmes` abordés sur le site.
 - Présenter les `trois thèmes principaux` sous forme de `cartes`:
   - [ ] `Les personnages`: Mettre en lumière les trois protagonistes principaux et leur importance dans l'histoire.
@@ -64,9 +63,9 @@ Le projet se présentera selon la structure suivante :
 - [ ] La couleur de fond de l'en-tête et du pied de page doit être `#5e58c6` (violet).
 - [ ] Le texte dans l'en-tête doit être `blanc`.
 
+> Cette section décrit les objectifs à atteindre pour le défi et ne devrait pas être modifiée.
 
 ### ⚫ Capture d'écran
-
 
 `[capture d'écran ici ...]`
 
