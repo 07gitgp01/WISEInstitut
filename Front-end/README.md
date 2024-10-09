@@ -6,6 +6,7 @@ Important est de noter que le projet combinera certaines compétences en UX|UI d
 tout en valorisant nos compétences techniques sur GitHub.
 Le projet se présentera selon la structure suivante :
 
+
 ## 📌 Table des matières
 
 - [Vue d'ensemble](#-vue-densemble)
