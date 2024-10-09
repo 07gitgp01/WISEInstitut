@@ -1,9 +1,7 @@
 # Wise Institut Classroom - Harry Potter Website 🎓
 
-Ce document-ci décrit la conception d'un site web immersif consacré à l'univers de Harry Potter . Ce site vise à plonger les amoureux de films d'aventures 
-dans l'univers magique qui explore des aventures extraordinaires, des personnages inoubliables et des créatures légendaires.
-Important est de noter que le projet combinera certaines compétences en UX|UI design , et animations pour créer une expérience utilisateur agréable
-tout en valorisant nos compétences techniques sur GitHub.
+Ce document-ci décrit la conception d'un site web immersif consacré à l'univers de Harry Potter . Le site vise à plonger les amoureux de films d'aventures dans l'univers magique qui explore des aventures extraordinaires, des personnages inoubliables et des créatures légendaires.
+	Important est de noter que le projet combinera certaines compétences en UX|UI design , et animations pour créer une expérience utilisateur agréable tout en valorisant nos compétences techniques sur GitHub.
 Le projet se présentera selon la structure suivante :
 
 
@@ -67,90 +65,119 @@ Le projet se présentera selon la structure suivante :
 
 ### ⚫ Capture d'écran
 
+![Harry Potter univers](https://github.com/user-attachments/assets/f5f2d76b-69c2-485a-a081-ce436522fd67)
 
-`[capture d'écran ici ...]`
-
-Ajoutez une capture d'écran de votre solution. Vous pouvez utiliser un extension comme [FireShot](https://getfireshot.com/) pour prendre la capture d'écran. FireShot propose une option gratuite, donc vous n'avez pas besoin de l'acheter.
-
-> Supprimez cette note et les paragraphes ci-dessus lorsque vous ajoutez votre capture d'écran.
 
 ### ⚫ Liens
 
-- URL Github de la solution: [Ajoutez l'URL de votre solution ici](https://your-solution-url.com)
-- URL du site en ligne (facultatif): [Ajoutez l'URL du site en ligne ici](https://your-live-site-url.com)
-
----
+- URL Github de la solution:[Solution sur Github](https://github.com/07gitgp01/WISEInstitut/tree/main/Front-end/harry-potter-boilerplate)
 
 ## 📌 Mon processus
+
+**Planification :** Définir l'objectif, les sections et le contenu du site.
+
+**Conception :** une étape que j'ai malheureusement sauté, qui devait consister à créer une interface visuelle captivante en respectant le thème de l’univers Harry Potter.
+
+**Développement :** Utiliser HTML, CSS, pour coder la structure, le style et l’interactivité du site.
+
+**Optimisation :** Optimisation pour les moteurs de recherche. M'assurer que ma page contient des balises méta appropriées pour le référencement.
+
+**Mise en ligne :** Déployer le projet sur mon github 
 
 ### ⚫ Construit avec
 
 - Balises HTML5 sémantiques
 - Propriétés personnalisées CSS
 - Flexbox + Media queries
-- [React](https://reactjs.org/) - Librairie JavaScript
-- [Material-UI](https://mui.com/) - Composants UI personnalisés
-- [Tailwind CSS](https://tailwindcss.com/) - Framework CSS le plus populaire
-- [Sass](https://sass-lang.com/) - Préprocesseur CSS
-- [Redux](https://redux.js.org/) - Gestionnaire d'état
-- [TypeScript](https://www.typescriptlang.org/) - Type checker
-  ...
-
-> Ce ne sont que des exemples. Supprimez cette note et remplacez la liste ci-dessus par vos propres choix.
 
 ### ⚫ Ce que j'ai appris
-
-Utilisez cette section pour récapituler certaines de vos principales leçons apprises en travaillant sur ce projet. Rédiger ces informations et fournir des 
-exemples de code pour les aspects que vous souhaitez mettre en avant est un excellent moyen de renforcer vos connaissances.
-
-Voici comment ajouter des extraits de code:
-
-```html
-<h1>Un peu de code HTML dont je suis fier</h1>
+-Importer et utiliser de polices comme "harryp" pour l'ensemble de la page grâce à `@font-face`.
+```css
+@font-face {
+    font-family: 'harryp';
+    src: url('../assets/fonts/harryp.ttf');
+}
 ```
+
+- Ajouter des animations quand on passe la souris dessus.
+```css
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.sotXimg img:hover {
+    animation: pulse 2s ease-in-out infinite;
+    transform: scale(1.1);
+    transform: rotate3d(1.2);
+}
+```
+
+- Appliquer des ombres aux éléments pour leur donner un effet visuel de profondeur (ombre plus forte par défaut et ombre légère au survol).
+```css
+.sotXimg img {
+    max-width: 100%;
+    border: 1px solid #f1c70a;
+    border-radius: 10%;
+    transition: all 1s ease-in-out;
+    z-index: 1;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 1);
+}
+```
+
+- Utiliser des `media queries` pour rendre la page adaptable aux petits écrans
 
 ```css
-.proud-of-this-css {
-  color: papayawhip;
+@media (max-width: 768px) {
+    .sots {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .sotX {
+      width: 80%;
+      margin-bottom: 20px;
+    }
+   .sotY {
+      width: 80%;
+      margin-bottom: 20px;
+    }
 }
 ```
-
-```js
-const proudOfThisFunc = () => {
-  console.log('🎉')
-}
+- Ajouter des métadonnées dans la balise `<head>`, telles que des informations sur l'auteur, les mots-clés et l'encodage du fichier.
+```css
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Un site dédié à l'univers magique de Harry Potter">
+  <meta name="keywords" content="Harry Potter, magie, personnages, herbologie">
+  <meta name="author" content="W.Paulin GUIGMA">
+  <title>Harry Potter Website</title>
+  <link rel="icon" href="./assets/icons/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="./styles/index.css">
+</head>
 ```
-
-> Supprimez cette note et le contenu de cette section et remplacez-le par vos propres apprentissages en ajoutant des petits commentaires expliquant les aspects 
-que vous avez appris.
 
 ### ⚫ Développement continu
-
-Utilisez cette section pour décrire les domaines sur lesquels vous souhaitez continuer à vous concentrer dans vos projets futurs. Il peut s'agir de concepts que 
-vous ne maîtrisez pas encore totalement ou de techniques que vous avez trouvées utiles et que vous souhaitez affiner et perfectionner.
-
-> Supprimez cette note et le contenu de cette section et remplacez-le par vos propres plans de développement continu.
+Il faut noter que à l'avenir dans mes projets, j'aimerais bien peaufiner mes connaissances sur les medias queries et flexbox.
 
 ### ⚫ Ressources utiles
 
-- [Exemple de ressource 1](https://www.example.com) - Cela m'a aidé pour XYZ. J'ai vraiment aimé ce modèle et je l'utiliserai à l'avenir.
-- [Exemple de ressource 2](https://www.example.com) - Cet article est incroyable et m'a aidé à enfin comprendre XYZ. Je le recommande à tous ceux 
-qui apprennent encore ce concept.
-
-> Supprimez cette note et remplacez la liste ci-dessus par les ressources qui vous ont aidé durant le défi. Elles pourraient être utiles pour quiconque 
-consulte votre solution ou pour vous-même lorsque vous reviendrez sur ce projet dans le futur.
-
----
+- [ChatGPT ](https://chatgpt.com) - Cela m'a aidé à comprendre des notions. J'ai vraiment aimé ce modèle et je l'utiliserai à l'avenir.
+- [css-tricks](https://css-tricks.com/snippets/css/a-guide-to-flexbox/) - Ce site est incroyable et m'a aidé à apprehender beaucoup de choses en css, notamment le flexbox. Je le recommande à tous ceux qui apprennent encore ce concept.
 
 ## 📌 Auteur
 
-- Site Web - [Ajoutez votre portfolio ici si vous en avez un](https://www.votre-site.com)
-- Github - [@nomutilisateur](https://github.com/nomutilisateur)
-
----
+- Github - [@07gitgp01](https://github.com/07gitgp01/WISEInstitut/tree/main/Front-end/harry-potter-boilerplate)
 
 ## 📌 Remerciements
 
-C'est ici que vous pouvez remercier toutes les personnes qui vous ont aidé sur ce projet. Peut-être avez-vous travaillé en équipe ou vous êtes-vous inspiré de la solution de quelqu'un d'autre.
-
-> Si vous avez réalisé ce défi seul, vous pouvez supprimer entièrement cette section.
+Nos remerciements vont à l'endroit de [Raja Rakotonirina](https://github.com/RajaRakoto/) mon encadreur en front end.
+Et bien à WISE INSTITUTE où je suis ma formation en full stack.
