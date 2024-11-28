@@ -1,0 +1,23 @@
+*COMMANDES LINES WITH LINUX*
+
+**Install WAP (cli with IA for assistance)
+
+**Install paquages:
+	_ sudo pacman -S vlc
+	_ wget [url of the elements from a server]
+**Cron
+	_ cron -e
+   *crontab ui(version web: cronjobs)
+**Linux cli simulator
+	_ WWW.labex.com
+**Create other user on linux
+	_ sudo su
+	_ add user
+	_ su - [user name]
+	_ zsh
+ *Check how to generate ssh key and link it to mail(github)
+	_ ssh-keygen -t [ssh key] -C "mail"
+	_ ssh-ad id_[key or id]
+	_ cat id_[ssh id]
+**Remain a pwd for an user
+	_ sudo passwd [user's name]

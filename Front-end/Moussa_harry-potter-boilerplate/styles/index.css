@@ -1,0 +1,237 @@
+@font-face {
+  font-family: harryp;
+  src: url(../assets/fonts/harryp.ttf);
+}
+body {
+  font-size: 16px;
+  font-family: harryp, Arial, Helvetica, sans-serif;
+  background-image: url(../assets/images/poudlard-bg.jpeg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+@font-face {
+  font-family: harryp;
+  src: url(../assets/fonts/harryp.ttf);
+}
+
+header {
+  top: 0;
+  left: 0;
+  position: fixed;
+  z-index: 10;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  background-color: #5e58c6;
+  color: white;
+  box-shadow: 0 4px 30px rgb(0, 0, 0);
+}
+header .logo {
+  width: 40%;
+  text-align: center;
+}
+header nav {
+  width: 50%;
+}
+header nav ul {
+  width: 90%;
+  display: flex;
+  flex-direction: row;
+  row-gap: 2%;
+  justify-content: center;
+  align-items: center;
+}
+header nav ul li {
+  margin-left: 10%;
+  font-size: 1.5rem;
+}
+header nav ul li a {
+  text-align: center;
+  color: White;
+}
+header nav ul li a:hover {
+  text-decoration: none;
+  color: #b2aef4;
+  transform: scale(1.1);
+  transition: 1s;
+}
+
+/* CSS du carroussel */
+main {
+  margin-top: 100px;
+  position: relative;
+  align-items: center;
+  max-height: 100%;
+  padding: 2px;
+}
+
+h2 {
+  color: #5e58c6;
+}
+
+.welcome-message {
+  background-color: whitesmoke;
+  opacity: 0.8;
+  border: 1 solid black;
+  border-radius: 1%;
+  border-left: 5px solid #5e58c6;
+  border-right: 5px solid #5e58c6;
+  transition: all 1s ease-in-out;
+  width: 80%;
+  margin-left: 10%;
+  margin-top: 2%;
+  margin-bottom: 2%;
+  padding: 1%;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+}
+.welcome-message h2 {
+  font-size: 1.5rem;
+  align-items: center;
+  justify-content: center;
+  padding: 2%;
+}
+.welcome-message p {
+  justify-content: center;
+  width: 100%;
+  /* padding-left: 25%; */
+  align-items: center;
+  word-wrap: normal;
+  padding-bottom: 2%;
+  font-size: 23px;
+}
+
+.welcome-message:hover {
+  transform: scale(1.1);
+}
+
+/* CSS of sots */
+.sots {
+  justify-content: center;
+  padding: 5px;
+  border-top: 2px #f1c70a solid;
+  /* soty CSS */
+}
+.sots .sotX {
+  padding: 2% 2%;
+  max-width: 100%;
+}
+.sots .sotXsection {
+  max-width: 100%;
+  opacity: 0.8;
+  padding: 7px;
+  border-radius: 5% 1% 1% 5%;
+  border-left: 5px solid #f1c70a;
+  background-color: whitesmoke;
+  transition: all 1s ease-in-out;
+  box-shadow: 0 4px 30px rgb(0, 0, 0);
+}
+.sots .sotXsection section {
+  padding: 1%;
+  margin: 3%;
+  max-width: 100%;
+  text-align: justify;
+}
+.sots .sotXsection section .titleHarryp {
+  text-align: center;
+}
+.sots .sotXsection section p {
+  font-size: 23px;
+}
+.sots .sotXsection .sotXimg {
+  float: left;
+  max-width: 30%;
+  margin: 3%;
+}
+.sots .sotXsection .sotXimg img {
+  max-width: 100%;
+  border: 1px solid #f1c70a;
+  border-radius: 10%;
+  transition: all 1s ease-in-out;
+  z-index: 1;
+  box-shadow: 0 4px 30px rgb(0, 0, 0);
+}
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+    box-shadow: 0 4px 10px rgb(0, 0, 0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+.sots .sotXsection .sotXimg img:hover {
+  animation: pulse 2s ease-in-out infinite;
+  transform: scale(1.1);
+  transform: rotate3d(1.2);
+}
+.sots .sotY {
+  padding: 2% 2%;
+  max-width: 100%;
+}
+.sots .sotY .sotYsection {
+  opacity: 0.8;
+  padding: 7px;
+  border-radius: 1% 5% 5% 1%;
+  border-right: 5px solid #7bc922;
+  background-color: whitesmoke;
+  width: 100%;
+  transition: all 1s ease-in-out;
+}
+.sots .sotY .sotYsection section {
+  padding: 1%;
+  margin: 3%;
+  max-width: 100%;
+  text-align: justify;
+}
+.sots .sotY .sotYsection section .magTitle {
+  text-align: center;
+}
+.sots .sotY .sotYsection section p {
+  font-size: 23px;
+}
+.sots .sotY .sotYsection .sotYimg {
+  float: right;
+  max-width: 30%;
+  margin: 3%;
+}
+.sots .sotY .sotYsection .sotYimg img {
+  max-width: 100%;
+  border: 1px solid #f1c70a;
+  border-radius: 10%;
+  transition: all 1s ease-in-out;
+  box-shadow: 0 4px 30px rgb(0, 0, 0);
+}
+.sots .sotY .sotYsection .sotYimg img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 10px rgb(0, 0, 0);
+}
+
+footer {
+  text-align: center;
+  padding: 10px;
+  background-color: #5e58c6;
+  color: white;
+  width: 100%;
+  bottom: 0;
+}
+footer a {
+  color: white;
+}
+
+@media (max-width: 768px) {
+  #themes {
+    flex-direction: column;
+    align-items: center;
+  }
+  .sots {
+    width: 80%;
+    margin-bottom: 20px;
+  }
+}
+
+/*# sourceMappingURL=index.css.map */

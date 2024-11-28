@@ -1,0 +1,46 @@
+@import 'variables';
+
+@mixin fontFace($font) {
+    @font-face {
+        font-family: $font;
+        src: url(../assets/fonts/harryp.ttf);
+    }
+
+    font-family: $font, Arial, Helvetica, sans-serif;
+}
+
+@mixin fixNav() {
+    top: 0;
+    left: 0;
+    position: fixed;
+    z-index: 10;
+    width: 100%;
+}
+
+@mixin linkHover() {
+    nav ul li a:hover {
+        text-decoration: none;
+        color: #b2aef4;
+        transform: scale(1.1);
+        transition: 1s;
+    }
+}
+
+@mixin WlcMessageDesign() {
+    border: 1 solid black;
+    border-radius: 1%;
+    border-left: 5px solid $navColor;
+    border-right: 5px solid $navColor;
+    transition: all 1s ease-in-out;
+}
+
+//animations
+@mixin imgAnimation($anim){
+    
+    animation: $anim 2s ease-in-out infinite;
+    transform: scale(1.1);
+    transform: rotate3d(1.2);
+    
+}
+
+
