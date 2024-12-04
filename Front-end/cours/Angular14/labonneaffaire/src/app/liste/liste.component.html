@@ -1,0 +1,20 @@
+<div id="alertMsg">
+    <p>{{message}}</p>
+  </div> 
+  
+  <!-- Le contenu -->
+  <div id="home" class="container">
+    <app-article 
+                 *ngFor = "let element of liste"
+                 [titreArticle]="element.titreArticle" 
+                 [prixArticle]="element.prixArticle" 
+                 [description]="element.description"
+                 [urlImg]="element.urlImg"
+                 [textAltImg]="element.textAltImg"
+                 [dispo]="element.dispo"
+                 [idArticle]="element.id"
+                 (info)="element.info"
+                 >
+    </app-article>
+  </div>
+  

@@ -1,3 +1,19 @@
 .articleInfo{
   width: 18rem;
 }
+
+#details{
+  display: block;
+}
+.nolike{
+  background-color: #4267b2;
+  color: white;
+}
+
+.show {
+  display: inline-block;
+}
+
+.hidden {
+  display: none;
+}
