@@ -6,7 +6,9 @@
     </h5>
     <h6 class="card-text">{{prixArticle}} &euro;</h6>
     <p class="card-text">{{description}}</p>
-    <a id="details" routerLink="/details/{{ idArticle }}">=> voir l'article</a>
+    <a class="p-4" id="details" routerLink="/details/{{ idArticle }}">=> voir l'article</a>
+    <hr>
+
 
     <button [ngClass]="{
               'show' : jaime === true,

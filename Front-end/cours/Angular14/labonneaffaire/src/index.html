@@ -6,9 +6,37 @@
   <base href="/">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link rel="stylesheet" href="styles.css">
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </head>
 <body>
-  <app-root></app-root>
+  <header>
+    <div class="collapse" id="navbarToggleExternalContent" data-bs-theme="dark">
+      <div class="bg-dark p-4">
+        <h5 class="text-body-emphasis h4">La Bonne affaire</h5>
+        <span class="text-body-secondary">Bienvenu chez La Bonne affaire</span>
+      </div>
+    </div>
+    <nav class="navbar navbar-dark bg-dark">
+      <div class="container-fluid">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      </div>
+    </nav>
+  
+  </header>
+  <div class="container">
+  
+    <app-root></app-root>
+  </div>
+  
+  <!-- Le pied de page -->
+  <footer class="py-1 bg-dark">
+    <div class="container">
+      <p class="m-0 text-center text-white" >Copyright &copy; La bonne affaire</p>
+    </div>
+  </footer>
+  
 </body>
 </html>
