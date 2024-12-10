@@ -3,13 +3,19 @@
     color: green;
     font-size: 1.2rem;
     padding-top: 20px;
-  }
+}
+
+.connect{
+  text-align: center;
+  padding-top: 2%;
+  font-size: 1.5rem;
+}
   
-  #home {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    align-items: center;
-    padding: 5%;
-  }
+#home {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  padding: 5%;
+}

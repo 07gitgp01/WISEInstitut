@@ -10,6 +10,8 @@ import { ListeComponent } from './liste/liste.component';
 import { DetailsComponent } from './details/details.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { AjouterArticleComponent } from './ajouter-article/ajouter-article.component';
+import { ReactiveFormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -24,8 +26,8 @@ import { AjouterArticleComponent } from './ajouter-article/ajouter-article.compo
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    NgForm
-    
+    ReactiveFormsModule,
+    HttpClientModule
   ],
   providers: [DataService],
   bootstrap: [AppComponent]

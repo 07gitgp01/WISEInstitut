@@ -1,11 +1,29 @@
-<h1>Ajouter un nouvel article</h1>
+<div class="my-5" id="container">
 
-<form (ngSubmit)="onSubmit(f)" #f="ngForm">
-    <label for="">Titre</label>
-    <input type="text" name="title">
-    <br>
-    <label for="">Prix</label>
-    <input type="text" name="price">
-    <br>
-    <button class="btn btn-primary">Envoyer</button>
-</form>
+    <h1>Ajouter un nouvel article</h1>
+    
+    <form (ngSubmit)="onSubmit(f)" #f="ngForm">
+        <label for="">Titre</label>
+        <!-- <input type="text" name="title" [(ngModel)]="titleToAdd" minlength="4" required #title="ngModel"> -->
+        <input type="text" name="title" [formControl]="titleToAdd" minlength="4" required>
+        <!-- <div *ngIf="title.invalid && (title.dirty || title.touched)">
+            <div *ngIf="title.errors?.['required']">
+                Le champ Titre est obligatoire!
+            </div>
+            <div *ngIf="title.errors?.['minlenght']">
+                Le titre doit avoir au minimum 6 caractères!
+            </div>
+        </div> -->
+        <br>
+        <label for="">Prix</label>
+        <!-- <input type="text" name="price" [(ngModel)]="priceToAdd" required #price="ngModel"> -->
+        <input type="text" name="price" [formControl]="priceToAdd" required>
+        <!-- <div *ngIf="price.invalid && (price.dirty || price.touched)">
+            <div *ngIf="price.errors?.['required']">
+                Le champ prix est obligatoire!
+            </div>
+        </div> -->
+        <hr>
+        <button class="btn btn-primary">Envoyer</button>
+    </form>
+</div>

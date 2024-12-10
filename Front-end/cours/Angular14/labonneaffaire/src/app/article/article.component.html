@@ -6,22 +6,25 @@
     </h5>
     <h6 class="card-text">{{prixArticle}} &euro;</h6>
     <p class="card-text">{{description}}</p>
-    <a class="p-4" id="details" routerLink="/details/{{ idArticle }}">=> voir l'article</a>
+    <a class="p-4" id="details" routerLink="/details/{{ idArticle }}">=> Voir l'article</a>
+    <!-- <a class="p-4" id="details" [routerLink]="['/details', 'idArticle']">=> Voir l'article</a> -->
     <hr>
 
 
     <button [ngClass]="{
               'show' : jaime === true,
+              'coloTrue' : jaime === true,
               'hidden' : jaime === false
             }" 
-            (click)="onLike()">J'aime</button>
+            (click)="onLike()">&heartsuit;</button>
 
     <button [ngClass]="{
       'show' : jaime === false,
+      'coloFalse' : jaime === false,
       'hidden' : jaime === true
     }" 
     (click)="onLike()" 
-    class="nolike">Je n'aime pas</button>
+    class="nolike">&heartsuit;</button>
 
     <p>Nombre de like : {{totalNbrLike}}</p>
 

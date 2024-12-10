@@ -1,1 +1,40 @@
-<router-outlet></router-outlet>
+<div class="body-app">
+
+    <header>
+        <div class="collapse" id="navbarToggleExternalContent" data-bs-theme="dark">
+          <div class="bg-dark p-4" id="navPosition">
+            <div>
+              <h5 class="text-body-emphasis text-white h1"><a routerLink="/liste">La Bonne affaire</a></h5>
+              <span class="text-body-secondary">Bienvenu chez La Bonne affaire</span>
+            </div>
+            <div>
+
+                <ul>
+                  <li><a class="text-white h6" routerLink="/ajout">Ajouter</a></li>
+                  <li><a class="text-white h6" routerLink="#">About</a></li>
+                  <li><a class="text-white h6" routerLink="#">Contacts</a></li>
+                </ul>
+            </div>
+          </div>
+        </div>
+        <nav class="navbar navbar-dark bg-dark">
+          <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          </div>
+        </nav>
+      
+      </header>
+    
+    <div class="container">
+        <router-outlet></router-outlet>
+    </div>
+    
+    <!-- Le pied de page -->
+    <footer class="py-1 bg-dark">
+        <div class="container">
+          <p class="m-0 text-center text-white" >Copyright &copy; La bonne affaire</p>
+        </div>
+      </footer>
+</div>

@@ -1,6 +1,6 @@
-<div id="infoDetails" class="container">
-    <img src="../../assets/images/VI.jpg" alt="Details de l'article">
-    <h1>Titre de l'article</h1>
-    <h3>xx &euro;</h3>
-    <p>Description de l'article ..............</p>
+<div id="infoDetails" class="container py-5" *ngIf="detailContent">
+    <img class="my-5" src="{{ detailContent.urlImg }}" alt="Details de l'article">
+    <h1>{{detailContent.titreArticle}}</h1>
+    <h3>{{detailContent.prixArticle}} &euro;</h3>
+    <p>{{detailContent.description}}</p>
 </div>
