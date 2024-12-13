@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { NgForm, FormControl } from '@angular/forms';
+import { NgForm, FormControl, Validators  } from '@angular/forms';
 
 @Component({
   selector: 'app-ajouter-article',
@@ -7,8 +7,13 @@ import { NgForm, FormControl } from '@angular/forms';
   styleUrls: ['./ajouter-article.component.css']
 })
 export class AjouterArticleComponent implements OnInit {
-  titleToAdd= new FormControl('');
-  priceToAdd= new FormControl('');
+  titleToAdd= new FormControl('', [
+    Validators.required,
+    Validators.minLength(4)
+  ]);
+  priceToAdd= new FormControl('', [
+    Validators.required,
+  ]);
   constructor(){}
   ngOnInit(): void {
     

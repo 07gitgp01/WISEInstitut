@@ -5,24 +5,24 @@
     <form (ngSubmit)="onSubmit(f)" #f="ngForm">
         <label for="">Titre</label>
         <!-- <input type="text" name="title" [(ngModel)]="titleToAdd" minlength="4" required #title="ngModel"> -->
-        <input type="text" name="title" [formControl]="titleToAdd" minlength="4" required>
-        <!-- <div *ngIf="title.invalid && (title.dirty || title.touched)">
-            <div *ngIf="title.errors?.['required']">
+        <input type="text" id="title" name="title" [formControl]="titleToAdd" minlength="4" required>
+        <div *ngIf="titleToAdd.invalid && (titleToAdd.dirty || titleToAdd.touched)">
+            <div class="text-danger" *ngIf="titleToAdd.errors?.['required']">
                 Le champ Titre est obligatoire!
             </div>
-            <div *ngIf="title.errors?.['minlenght']">
-                Le titre doit avoir au minimum 6 caractères!
+            <div class="text-danger" *ngIf="titleToAdd.errors?.['minlenght']">
+                Le titre doit avoir au minimum 4 caractères!
             </div>
-        </div> -->
+        </div>
         <br>
         <label for="">Prix</label>
         <!-- <input type="text" name="price" [(ngModel)]="priceToAdd" required #price="ngModel"> -->
         <input type="text" name="price" [formControl]="priceToAdd" required>
-        <!-- <div *ngIf="price.invalid && (price.dirty || price.touched)">
-            <div *ngIf="price.errors?.['required']">
+        <div *ngIf="priceToAdd.invalid && (priceToAdd.dirty || priceToAdd.touched)">
+            <div class="text-danger" *ngIf="priceToAdd.errors?.['required']">
                 Le champ prix est obligatoire!
             </div>
-        </div> -->
+        </div>
         <hr>
         <button class="btn btn-primary">Envoyer</button>
     </form>
