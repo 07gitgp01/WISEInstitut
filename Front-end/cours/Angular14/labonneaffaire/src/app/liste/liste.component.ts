@@ -11,7 +11,7 @@ import { map, filter } from 'rxjs/operators';
 })
 export class ListeComponent implements OnInit, OnDestroy{
   message: string= "";
-  liste;
+  liste: any = [];
   compteurSubscription: Subscription;
   secondes;
   
@@ -23,7 +23,8 @@ export class ListeComponent implements OnInit, OnDestroy{
     
   constructor(private dataService:DataService){}
   ngOnInit(): void {
-    this.liste=this.dataService.listeArticles;
+    // this.liste=this.dataService.listeArticles;
+    this.getList();
     
     const compteur = interval(1000).pipe(
       filter(value => value%2 === 0),
@@ -38,6 +39,13 @@ export class ListeComponent implements OnInit, OnDestroy{
       error: (e) => console.error(e),
       complete: () => console.info('complete')
     })
+  }
+
+  getList(){
+    this.dataService.getListFromServer().subscribe(liste => {
+      this.liste = liste;
+      console.log(liste);
+    });
   }
 
   ngOnDestroy(): void {

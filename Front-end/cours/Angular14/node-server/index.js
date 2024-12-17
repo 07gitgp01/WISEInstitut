@@ -8,7 +8,8 @@ const PORT = 3000;
 
 // mongoose connection
 mongoose.Promise = global.Promise;
-mongoose.connect('mongodb://localhost/CRMdb')
+// mongoose.connect('mongodb://localhost/CRMdb')
+mongoose.connect('mongodb://127.0.0.1:27017/CRMdb')
 .then(() => console.log('Connected to MongoDB'))
 .catch((err) => console.error('Could not connect to MongoDB', err));
 

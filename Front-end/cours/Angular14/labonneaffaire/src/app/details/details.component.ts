@@ -1,7 +1,7 @@
 import { Component, OnInit, OnDestroy } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { DataService } from '../services/data.service';
-import { interval, Subscription } from 'rxjs';
+import { interval, Observable, Subscription } from 'rxjs';
 import { map, filter } from 'rxjs/operators';
 
 
@@ -12,7 +12,7 @@ import { map, filter } from 'rxjs/operators';
 })
 export class DetailsComponent implements OnInit, OnDestroy {
   constructor(private route:ActivatedRoute, private dataservice: DataService){}
-  detailsId: Number;
+  detailsId: number;
   detailContent: any;
   subsc: Subscription;
 
@@ -20,16 +20,17 @@ export class DetailsComponent implements OnInit, OnDestroy {
     this.detailsId= Number(this.route.snapshot.paramMap.get('id'));
     console.log(this.detailsId);
 
-    this.detailContent = this.dataservice.listeArticles.find(
-      article => article.id === this.detailsId
-    );
+    this.dataservice.getArticle(this.detailsId).subscribe(article => {
 
-    if (this.detailContent) {
-      console.log('Article trouvé :', this.detailContent);
-    } else {
-      console.error('Erreur : article non trouvé !');
-    }
+      if (article) {
+        this.detailContent = article;
+        console.log('Article trouvé :', article);
+      } else {
+        console.error('Erreur : article non trouvé !', this.detailContent);
+      }
+    })
     
+
 
   }
 
