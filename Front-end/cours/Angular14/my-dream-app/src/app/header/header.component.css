@@ -1,0 +1,7 @@
+h1 {
+    font-style: "Palatino Linotype", "Book Antiqua", serif;
+    color: black;
+    -webkit-text-fill-color: white;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+}
