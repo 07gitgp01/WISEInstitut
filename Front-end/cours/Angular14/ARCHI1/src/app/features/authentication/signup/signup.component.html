@@ -1,1 +1,44 @@
-<p>signup works!</p>
+<div class="signup-position">
+    
+    <form (ngSubmit)="submitForm()" #userForm="ngForm">
+        <h1>Inscription</h1>
+        <div class="mb-3">
+            <label for="firstName" class="form-label">Prénom</label>
+            <input type="text" id="firstName" class="form-control" name="firstName" placeholder="Entrez votre prénom" required>
+        </div>
+        <div class="mb-3">
+            <label for="lastName" class="form-label">Nom</label>
+            <input type="text" id="lastName" class="form-control" name="lastName" placeholder="Entrez votre nom" required>
+        </div>
+        <div class="mb-3">
+            <label for="gender" class="form-label">Genre</label>
+            <select id="gender" class="form-control" name="gender" required>
+                <option value="">Sélectionnez</option>
+                <option value="male">Homme</option>
+                <option value="female">Femme</option>
+            </select>
+        </div>
+        <div class="mb-3">
+            <label for="birthDate" class="form-label">Date de Naissance</label>
+            <input type="date" id="birthDate" class="form-control" name="birthDate" required>
+        </div>
+        <div class="mb-3">
+          <label for="password" class="form-label">Mot de passe</label>
+          <input type="password" class="form-control" id="password" name="password" placeholder="Entrez un mot de passe">
+        </div>
+        <div class="mb-3">
+            <label for="login" class="form-label">Identifiant</label>
+            <input type="text" id="login" class="form-control" name="login" placeholder="Choisissez un identifiant" required>
+        </div>
+        <div class="mb-3">
+            <label for="companyName" class="form-label">Nom de l'Entreprise</label>
+        <input type="text" id="companyName" class="form-control" name="companyName" placeholder="Entrez le nom de votre entreprise" required>
+        </div>
+        <button type="submit" class="btn btn-primary">Signup</button>
+        <div class="mt-3">
+          <!-- <input type="checkbox" class="form-check-input" id="exampleCheck1">
+          <label class="form-check-label" for="exampleCheck1">Check me out</label> -->
+          <a routerLink="">Vous avez déjà un compte ? </a>
+        </div>
+      </form>
+  </div>

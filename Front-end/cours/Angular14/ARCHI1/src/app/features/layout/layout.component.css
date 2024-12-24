@@ -1,0 +1,9 @@
+#layout-content{
+    min-height: 87vh;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+#layout-content .container{
+    width: 30%;
+}
