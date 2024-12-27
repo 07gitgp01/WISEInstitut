@@ -12,8 +12,11 @@
   "dependencies": {
     "@babel/cli": "^7.26.4",
     "@babel/node": "^7.26.0",
+    "bcrypt": "^5.1.1",
     "body-parser": "^1.17.2",
+    "cors": "^2.8.5",
     "express": "^4.15.4",
+    "jsonwebtoken": "^9.0.2",
     "mongodb": "^6.12.0",
     "mongoose": "^8.9.0",
     "nodemon": "^1.12.0"

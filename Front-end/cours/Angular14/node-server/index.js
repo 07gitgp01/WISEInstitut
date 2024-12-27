@@ -4,7 +4,9 @@ import bodyParser from 'body-parser';
 import cors from 'cors';
 import jsonwebtoken from 'jsonwebtoken';
 import routes from './src/routes/crmRoutes';
+// import routes from './src/routes/registerRoutes';
 import User from './src/models/userModel';
+import Register from './src/models/registerModel';
 
 const app = express();
 const PORT = 3000;
