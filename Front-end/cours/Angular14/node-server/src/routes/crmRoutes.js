@@ -42,8 +42,8 @@ const routes = (app) => {
         next();
     }, getRegisters)
 
-     // POST endpoint
-     .post(addNewRegister);
+    // POST endpoint
+    .post(addNewRegister);
 }
 
 export default routes;

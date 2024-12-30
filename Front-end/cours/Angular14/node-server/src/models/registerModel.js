@@ -28,6 +28,6 @@ export const RegisterSchema = new Schema ({
     },
     companyName: {
         type: String,
-        required: 'Entrer le nom d evotre compagnie'
+        required: 'Entrer le nom de votre compagnie'
     }
 })

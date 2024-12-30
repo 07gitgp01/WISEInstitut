@@ -4,7 +4,8 @@ export interface User {
     gender: string;    
     birthDate: Date;   
     login: string;     
-    password: string;  
+    password: string;
+    confpassword: string;  
     companyName: string;
 }
 

@@ -1,1 +1,25 @@
-<p>home works!</p>
+
+<table class="tableau-style">
+    <thead>
+        <tr>
+            <th>Nom</th>
+            <th>Prenom</th>
+            <th>Nom d'utilisateur</th>
+            <th>Genre</th>
+            <th>Année de naissance</th>
+            <th>Compagnie</th>
+        </tr>
+    </thead>
+
+    <tbody>
+        <tr  *ngFor="let register of registers">
+            <td>{{register.lastName}}</td>
+            <td>{{register.firstName}}</td>
+            <td>{{register.login}}</td>
+            <td>{{register.gender}}</td>
+            <td>{{register.birthDate}}</td>
+            <td>{{register.companyName}}</td>
+        </tr>
+        
+    </tbody>
+</table>

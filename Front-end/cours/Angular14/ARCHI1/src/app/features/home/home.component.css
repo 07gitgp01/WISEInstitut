@@ -1,0 +1,32 @@
+body{
+    height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.tableau-style{
+    border-collapse: collapse;
+    min-width: 400px;
+    width: auto;
+    box-shadow: 0 5px 50px rgba(0, 0, 0, 0.15);
+    cursor: pointer;
+    margin: 100px auto;
+    border: solid 1px midnightblue;
+}
+
+thead tr{
+    background-color: blue;
+    color: white;
+    text-align: left;
+}
+
+th, td{
+    padding: 15px 20px;
+}
+
+tbody tr, td, th{
+    border: solid 1px white;
+}
+
+tbody tr:nth-child(even){
+    background-color: #f3f3f3;
+}

@@ -7,8 +7,9 @@ const Register = new mongoose.model('Register', RegisterSchema);
 export const addNewRegister = async (req, resp) => {
     try {
         const newRegister = new Register(req.body);
+        console.log('req.body', req.body);
         const register = await newRegister.save();
-        resp.status(200).json(register);
+        resp.status(200).json({register});
     }
     catch (err) {
         resp.status(500).json({message: 'Erreur lors de l\'ajout du register', error: err.message
